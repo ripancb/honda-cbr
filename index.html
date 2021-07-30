@@ -33,15 +33,23 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel"> Upcomming Latest Model CBR-Honda </h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- header-image -->
-        <div class="ms-5">
+        <div class="ms-5 max-width: 100%;
+        overflow-x: ;">
             <img src="images/header-bike.png" alt="" width="550px" height="450px">
         </div>
     </section>
@@ -70,9 +78,9 @@
         <!-- Clients-header -->
         <h2 class="text-center fw-bold mt-5">Happy <span class="text-warning">Clients Says</span> </h2>
         <!-- Clients-images -->
-        <div class="row row-cols-1 row-cols-md-3 g-5 py-5 ms-5 ">
+        <div class="d-flex justify-content-evenly mt-5">
             <div class="card ms-5" style="width: 18rem;">
-                <img src="images/user-1.png" class="card-img-top" alt="...">
+                <img class="img-fluid display:center" src="images/user-1.png" class="" alt="...">
                 <div class="card-body">
                     <p class="card-text">Slate helps you see how
                         many more days you need
@@ -94,7 +102,7 @@
             </div>
             <div>
                 <div class="card ms-5" style="width: 18rem;">
-                    <img src="images/user-2.png" class="card-img-top" alt="...">
+                    <img class="img-fluid" src="images/user-2.png">
                     <div class="card-body">
 
                         <p class="card-text">Slate helps you see how
@@ -116,8 +124,8 @@
                 </div>
             </div>
             <div>
-                <div class="card ms-5" style="width: 18rem;">
-                    <img src="images/user-3.png" class="card-img-top" alt="...">
+                <div class="card w-30 ms-5" style="width: 18rem;">
+                    <img class="img-fluid" src="images/user-3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Slate helps you see how
                             many more days you need
@@ -141,97 +149,103 @@
     <!-- asked-question-part -->
     <h1 class="text-center mt-5 fw-bold">Frequently Asked <span class="text-warning">Questions</span></h1>
 
-    <section class="container-fluid d-flex mt-2 d-flex gap-4 row row-cols-1 row-cols-md-3 g-5 py-5 ms-5">
+    <section class="container-fluid ">
+        <div class="d-flex">
+            <div class="col-lg-6 img-fluid">
+                <img class="img-fluid mt-5 ms-5" src="images/faq.png" alt="" width="400px" height="370px">
+            </div>
+            <!-- accordion-part -->
+            <div class="justify-content-evenly mt-5 ">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What are the most important things I should
+                                know about riding a bike?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will
+                                    help
+                                    you be a more focused and legally compliant bike rider.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How can I tell if my helmet is old and I need a
+                                new one?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
 
-        <div class="col-lg-6 img-fluid">
-            <img src="images/faq.png" alt="" width="400px" height="370px">
-        </div>
-        <!-- accordion-part -->
-        <div class="h-100 mt-5">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What are the most important things I should
-                            know about riding a bike?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
-                                laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will
-                                help
-                                you be a more focused and legally compliant bike rider.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How can I tell if my helmet is old and I need a
-                            new one?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                My bike has been in storage is it safe to ride?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            My bike has been in storage is it safe to ride?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the
-                            transition
-                            does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            What rules should I follow when riding my bike?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-                            that just about any HTML can go within the though the
-                            transition
-                            does limit overflow.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What rules should I follow when riding my bike?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You
+                                can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the though the
+                                transition
+                                does limit overflow.
+                            </div>
                         </div>
                     </div>
                 </div>
