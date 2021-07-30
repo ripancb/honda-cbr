@@ -1,0 +1,9 @@
+/* grayscale-image */
+.first{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.third{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
